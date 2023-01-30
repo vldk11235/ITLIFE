@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-wrapper {
+    max-width: 1170px;
+    width: 100%;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.description {
+    font-weight: 300;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+}
+
+.logo__text {
+    font-family: 'Train One', cursive;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: #282528;
+    vertical-align: middle;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav__link {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #3C3C3C;
+}
+
+.nav__link:hover {
+    color: #18B5DC;
+}
+
+.button__callback {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #3C3C3C;
+    border: 1px solid #3C3C3C;
+    padding: 10px 20px;
+}
+
+.button__callback:hover {
+    background: #18B5DC;
+    border: 1px solid #18B5DC;
+    color: #FFFFFF;
+}
+
+.about-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex: 1;
+    border-top: 1px solid #BDBDBD;
+    background: #F6F6F6;
+    padding: 150px 0;
+}
+
+.about-us__top-text {
+    max-width: 570px;
+    color: #3C3C3C;
+    text-align: center;
+}
+
+.about-us__title {
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+.about-us__title:after {
+    content: '';
+    display: block;
+    margin: 20px auto 40px;
+    text-align: center;
+    width: 45px;
+    border-bottom: 4px solid #DDDBDB;
+}
+
+.about-us__description {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.about-us__team-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-us__item-title {
+    font-size: 18px;
+    line-height: 22px;
+    color: #282528;
+    margin-top: 20px;
+}
+
+.about-us__description {
+    font-size: 18px;
+    line-height: 22px;
+    color: #646464;
+}
+
+.footer {
+    box-sizing: border-box;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+    max-height: 260px;
+}
+
+.footer__nav-link {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.social-networks__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-networks__list-item {
+    color: #18B5DC;
+    border: 1px solid #18B5DC;
+    font-size: 18px;
+    line-height: 22px;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+}
+
+.social-network__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 10px;
+}
+
+.social-network__icon_footer {
+    color: #18B5DC;
+}
+
+.social-networks__list-item:hover .social-network__link {
+    background: #18B5DC;
+}
+
+.social-networks__list-item:hover .social-network__icon_footer {
+    color: white;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.social-networks__list_photo-hover {
+    position: absolute;
+    inset: 0;
+    background: #18B5DC;
+}
+
+.social-networks__list-item_photo-hover {
+    background: #5DCBE6;
+}
+
+.social-network__icon_photo-hover {
+    color: #FFFFFF;
+}
+
+.social-networks__list-item_photo-hover:hover > .social-network__link {
+    background: #FFFFFF;
+}
+
+.social-networks__list-item_photo-hover:hover .social-network__icon_photo-hover {
+    color: #18B5DC;
+}
+
+.img-wrapper > .social-networks__list_photo-hover {
+    display: none;
+}
+
+.img-wrapper:hover > .social-networks__list_photo-hover {
+    display: flex;
+}
